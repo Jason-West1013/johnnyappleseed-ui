@@ -1,4 +1,13 @@
 <div class="wrapper appleseed-home">
-  <a class="logo" routerLink="/home"></a>
-  <app-nav></app-nav>
+  <div class="header-wrapper">
+    <a class="logo" routerLink="/home">
+      <!-- <img src="assets/images/appleseed-logo.png" /> -->
+    </a>
+    <app-nav *ngIf="!isMobile(); else showMobile"></app-nav>
+    <ng-template #showMobile>
+      <app-mobile-header></app-mobile-header>
+    </ng-template>
+  </div>
+
+
 </div>

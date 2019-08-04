@@ -10,6 +10,8 @@ import { LocationsComponent } from './pages/locations/locations.component';
 import { ErrorComponent } from './error/error.component';
 import { NavComponent } from './nav/nav.component';
 import { ResponsiveService } from './shared/responsive.service';
+import { HeaderComponent } from './header/header.component';
+import { MobileHeaderComponent } from './header/mobile-header/mobile-header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ResponsiveService } from './shared/responsive.service';
     RecipesComponent,
     LocationsComponent,
     ErrorComponent,
-    NavComponent
+    NavComponent,
+    HeaderComponent,
+    MobileHeaderComponent
   ],
   imports: [
     BrowserModule,

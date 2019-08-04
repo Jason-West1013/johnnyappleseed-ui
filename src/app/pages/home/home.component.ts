@@ -16,6 +16,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  isMobile() {
+    return this.responsiveService.getMobileStatus()
+  }
+
   onWindowResize(event) {
     this.responsiveService.checkWidth()
   }
