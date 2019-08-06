@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding, HostListener } from '@angular/core';
+import { ResponsiveService } from './shared/services/responsive.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'johnnyappleseed-ui';
+
+  constructor(private responsiveService: ResponsiveService) { }
+
+  @HostListener('window:resize')
+  onWindowResize() {
+    this.responsiveService.checkWidth()
+  }
+
+  isMobile() {
+    return this.responsiveService.getMobileStatus()
+  }
 }

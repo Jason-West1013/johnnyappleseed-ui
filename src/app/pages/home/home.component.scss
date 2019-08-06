@@ -1,30 +1,10 @@
 @import 'src/styles/variables.scss';
 
-.header-wrapper {
-  display: flex;
-  // TODO: change border color
-  border-bottom: 8px solid green;
-
-  .logo {
-    // border: 1px solid red;
-    padding: 1rem;
-    background-image: url("src/assets/images/appleseed-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    @media only screen and (max-width : 768px) {
-      flex-grow: 2;
-    }
-  }
-}
-
 .intro-photo-container {
   border: 1px solid black;
-  //   background-color: green;
   width: 100%;
   height: 480px;
   background-image: url("src/assets/images/pumpkin-crawler.jpg");
-  //   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
 

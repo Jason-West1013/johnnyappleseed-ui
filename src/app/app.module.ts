@@ -3,30 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { RecipesComponent } from './pages/recipes/recipes.component';
-import { LocationsComponent } from './pages/locations/locations.component';
 import { ErrorComponent } from './error/error.component';
-import { NavComponent } from './nav/nav.component';
-import { ResponsiveService } from './shared/responsive.service';
-import { HeaderComponent } from './header/header.component';
-import { MobileHeaderComponent } from './header/mobile-header/mobile-header.component';
+import { ResponsiveService } from './shared/services/responsive.service';
+import { HomeModule } from './pages/home/home.module';
+import { HeaderComponent } from './shared/header/header.component';
+import { MobileHeaderComponent } from './shared/header/mobile-header/mobile-header.component';
+import { AboutModule } from './pages/about/about.module';
+import { StandsModule } from './pages/stands/stands.module';
+import { RecipesModule } from './pages/recipes/recipes.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent,
-    RecipesComponent,
-    LocationsComponent,
     ErrorComponent,
-    NavComponent,
     HeaderComponent,
     MobileHeaderComponent
   ],
   imports: [
     BrowserModule,
+    HomeModule,
+    AboutModule,
+    StandsModule,
+    RecipesModule,
     AppRoutingModule
   ],
   providers: [ResponsiveService],
