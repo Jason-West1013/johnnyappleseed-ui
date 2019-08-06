@@ -1,12 +1,11 @@
 <div class="mobile-header-container">
-    <i class="material-icons" (click)="openNavMenu()">menu</i>
+  <i class="material-icons" (click)="toggleNavMenu()">menu</i>
 </div>
-<div class="mobile-nav-menu" *ngIf="this.navMenuOpened"> 
-<!--<div class="mobile-nav-menu"> -->
-    <ul class="mobile-nav">
-        <li>Home</li>
-        <li>About</li>
-        <li>Stands</li>
-        <li>Recipes</li>
-    </ul>
+<div class="mobile-nav-menu" *ngIf="this.navMenuOpened" [@slideInOut]>
+  <ul class="mobile-nav" (click)="toggleNavMenu()">
+    <li routerLink="/home">Home</li>
+    <li routerLink="/about">About</li>
+    <li routerLink="/stands">Stands</li>
+    <li routerLink="/recipes">Recipes</li>
+  </ul>
 </div>
