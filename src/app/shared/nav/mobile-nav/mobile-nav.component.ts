@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {trigger, transition, animate, style } from '@angular/animations';
 
 @Component({
-  selector: 'app-mobile-header',
-  templateUrl: './mobile-header.component.html',
-  styleUrls: ['./mobile-header.component.scss'],
+  selector: 'app-mobile-nav',
+  templateUrl: './mobile-nav.component.html',
+  styleUrls: ['./mobile-nav.component.scss'],
   animations: [
     trigger('slideInOut', [
       transition(':enter', [
@@ -17,7 +17,7 @@ import {trigger, transition, animate, style } from '@angular/animations';
     ])
   ]
 })
-export class MobileHeaderComponent implements OnInit {
+export class MobileNavComponent implements OnInit {
   navMenuOpened = false;
 
   constructor() { }

@@ -1,7 +1,6 @@
 @import 'src/styles/variables.scss';
 
-.mobile-header-container {
-  // border: 1px solid green;
+.mobile-nav-wrapper {
   padding: 1.5rem;
 }
 
@@ -21,7 +20,6 @@
   li {
     display: flex;
     align-items: center;
-    // border: 1px solid red;
     border-top: 3px solid $grey-primary;
     height: 5rem;
     padding-left: 15%;

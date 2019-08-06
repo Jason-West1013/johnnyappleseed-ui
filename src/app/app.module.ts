@@ -7,22 +7,20 @@ import { AppComponent } from './app.component';
 import { ErrorComponent } from './error/error.component';
 import { ResponsiveService } from './shared/services/responsive.service';
 import { HomeModule } from './pages/home/home.module';
-import { HeaderComponent } from './shared/header/header.component';
-import { MobileHeaderComponent } from './shared/header/mobile-header/mobile-header.component';
 import { AboutModule } from './pages/about/about.module';
 import { StandsModule } from './pages/stands/stands.module';
 import { RecipesModule } from './pages/recipes/recipes.module';
+import { NavModule } from './shared/nav/nav.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorComponent,
-    HeaderComponent,
-    MobileHeaderComponent
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NavModule,
     HomeModule,
     AboutModule,
     StandsModule,

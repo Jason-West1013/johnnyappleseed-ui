@@ -1,10 +1,8 @@
 <div class="header-wrapper">
-  <a class="logo" routerLink="/home">
-    <!-- <img src="assets/images/appleseed-logo.png" /> -->
-  </a>
-  <app-header *ngIf="!isMobile(); else showMobile"></app-header>
+  <a class="logo" routerLink="/home"></a>
+  <app-nav *ngIf="!isMobile(); else showMobile"></app-nav>
   <ng-template #showMobile>
-    <app-mobile-header></app-mobile-header>
+    <app-mobile-nav></app-mobile-nav>
   </ng-template>
 </div>
 
