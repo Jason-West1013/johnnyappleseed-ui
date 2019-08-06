@@ -12,15 +12,15 @@ export class ResponsiveService {
   }
 
   getMobileStatus(): boolean {
-    return this.isMobile
+    return this.isMobile;
   }
 
   checkWidth() {
     const width = window.innerWidth;
     if (width <= 768) {
-      this.isMobile = true
+      this.isMobile = true;
     } else {
-      this.isMobile = false
+      this.isMobile = false;
     }
   }
 

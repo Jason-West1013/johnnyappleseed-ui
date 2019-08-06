@@ -12,10 +12,10 @@ export class AppComponent {
 
   @HostListener('window:resize')
   onWindowResize() {
-    this.responsiveService.checkWidth()
+    this.responsiveService.checkWidth();
   }
 
   isMobile() {
-    return this.responsiveService.getMobileStatus()
+    return this.responsiveService.getMobileStatus();
   }
 }
